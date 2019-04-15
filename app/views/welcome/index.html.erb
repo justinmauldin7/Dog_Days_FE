@@ -7,7 +7,7 @@
   <body>
     <% @dogs.each do |dog| %>
       <div class="dog">
-        <h4><% dog.breed %></h4>
+        <h4><%= dog[:breed] %></h4>
       </div>
     <% end %>
   </body>
