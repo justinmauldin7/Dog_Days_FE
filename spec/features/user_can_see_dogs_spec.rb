@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-feature "user can search for house members" do
-  scenario "user submits valid state name" do
+describe "user can search for house members" do
+  it "user submits valid state name", :vcr do
     visit '/'
 
     expect(current_path).to eq(root_path)
