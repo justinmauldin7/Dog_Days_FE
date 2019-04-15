@@ -1,0 +1,9 @@
+language: ruby
+rvm:
+  - 2.4.5
+before_script:
+  - gem install bundler
+  - bundle exec install
+script:
+  - bundle exec rails g rspec:install
+  - bundle exec rspec

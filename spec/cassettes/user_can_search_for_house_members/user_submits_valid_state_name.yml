@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dog-days-api.herokuapp.com/api/v1/dogs.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Mon, 15 Apr 2019 01:43:14 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"f8a991801c7ed942ac13bf017213b846"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 631d0976-cb75-47f3-aebc-08eb610f81fe
+      X-Runtime:
+      - '0.005177'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"id":1,"breed":"Bulldog","created_at":"2019-04-14T23:41:18.582Z","updated_at":"2019-04-14T23:41:18.582Z"},{"id":2,"breed":"Labrador","created_at":"2019-04-14T23:41:18.588Z","updated_at":"2019-04-14T23:41:18.588Z"},{"id":3,"breed":"Greyhound","created_at":"2019-04-14T23:41:18.593Z","updated_at":"2019-04-14T23:41:18.593Z"}]'
+    http_version: 
+  recorded_at: Mon, 15 Apr 2019 01:42:16 GMT
+recorded_with: VCR 4.0.0
