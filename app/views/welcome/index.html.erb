@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dog Days</title>
+  </head>
+  <body>
+    <% @dogs.each do |dog| %>
+      <div class="dog">
+        <h4><% dog.breed %></h4>
+      </div>
+    <% end %>
+  </body>
+</html>
