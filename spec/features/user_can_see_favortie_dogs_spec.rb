@@ -1,10 +1,10 @@
 require 'rails_helper'
 
 describe "on the root page" do
-  it "can see a list of dogs", :vcr do
-    visit '/'
+  it "can see a list of favorite dogs", :vcr do
+    visit '/favorites'
 
-    expect(current_path).to eq(root_path)
+    expect(current_path).to eq(favorites_path)
     expect(page).to have_css(".dog", count: 6)
 
     within(first(".dog")) do
