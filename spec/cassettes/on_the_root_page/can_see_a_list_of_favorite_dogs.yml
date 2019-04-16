@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 16 Apr 2019 23:24:53 GMT
+      - Tue, 16 Apr 2019 23:35:35 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e570a8a8-2b69-4d5f-b664-9327c223ada2
+      - f8792c28-be5d-4be7-9e3b-4e0aefad55ea
       X-Runtime:
-      - '0.006042'
+      - '0.052104'
       Transfer-Encoding:
       - chunked
       Via:
@@ -42,5 +42,5 @@ http_interactions:
       encoding: UTF-8
       string: '[{"id":1,"breed":"Labrador","image":"https://images.dog.ceo/breeds/labrador/n02099712_6901.jpg","created_at":"2019-04-16T19:34:15.477Z","updated_at":"2019-04-16T19:34:15.477Z"},{"id":2,"breed":"Labrador","image":"https://images.dog.ceo/breeds/labrador/n02099712_8051.jpg","created_at":"2019-04-16T19:34:15.484Z","updated_at":"2019-04-16T19:34:15.484Z"},{"id":3,"breed":"Labrador","image":"https://images.dog.ceo/breeds/labrador/n02099712_7411.jpg","created_at":"2019-04-16T19:34:15.492Z","updated_at":"2019-04-16T19:34:15.492Z"},{"id":4,"breed":"Beagle","image":"https://images.dog.ceo/breeds/beagle/n02088364_12124.jpg","created_at":"2019-04-16T19:34:15.499Z","updated_at":"2019-04-16T19:34:15.499Z"},{"id":5,"breed":"Pug","image":"https://images.dog.ceo/breeds/pug/n02110958_13439.jpg","created_at":"2019-04-16T19:34:15.505Z","updated_at":"2019-04-16T19:34:15.505Z"},{"id":6,"breed":"Pug","image":"https://images.dog.ceo/breeds/pug/n02110958_14594.jpg","created_at":"2019-04-16T19:34:15.511Z","updated_at":"2019-04-16T19:34:15.511Z"}]'
     http_version: 
-  recorded_at: Tue, 16 Apr 2019 23:23:50 GMT
+  recorded_at: Tue, 16 Apr 2019 23:34:33 GMT
 recorded_with: VCR 4.0.0
