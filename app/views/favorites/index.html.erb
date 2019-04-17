@@ -5,16 +5,25 @@
     <title></title>
   </head>
   <body>
-    <h1>Dog Days</h1>
-    <div class="home_button">
-      <p><%= link_to "home", root_path %></p>
+    <div class="logo">
+      <i class="fas fa-paw"></i>
+      <h1>Dog Days</h1>
     </div>
-    <% @dogs.each do |dog| %>
-      <div class="dog">
-        <img id="dog_image" src="<%= dog[:image] %>" alt="<%= dog[:breed] %>">
-        <h4><%= dog[:breed] %></h4>
-        <%= link_to "Delete", favorite_path(id: dog[:id]), method: :delete, class: 'delete_button' %>
-      </div>
-    <% end %>
+    <div class="home_button">
+      <p><%= link_to "home", root_path, class: "button" %></p>
+    </div>
+
+    <div class="my_favorites">
+      <h2>My Favorites: </h2>
+    </div>
+    <div class="container">
+      <% @dogs.each do |dog| %>
+        <div class="dog">
+          <img id="dog_image" src="<%= dog[:image] %>" alt="<%= dog[:breed] %>">
+          <h4><%= dog[:breed] %></h4>
+          <%= link_to "Delete", favorite_path(id: dog[:id]), method: :delete, class: 'button' %>
+        </div>
+      <% end %>
+    </div>
   </body>
 </html>
