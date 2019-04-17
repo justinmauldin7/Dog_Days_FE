@@ -5,6 +5,10 @@
     <title>Dog Days</title>
   </head>
   <body>
+    <h1>Dog Days</h1>
+    <div class="all_favorites_button">
+      <p><%= link_to "My Favorites", favorites_path %></p>
+    </div>
     <div class="search">
       <%= form_tag root_path, method: :get do %>
         <%= text_field_tag :search, params[:search], placeholder: "Please enter a dog breed...", class: 'serach_field' %>
