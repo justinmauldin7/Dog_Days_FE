@@ -1,0 +1,87 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dog-days-api.herokuapp.com/api/v1/users?email=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 17 Apr 2019 07:47:31 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 17fa7477-57e1-403c-8be0-fb0f8ae41e7a
+      X-Runtime:
+      - '0.042425'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"error":"401 Unauthorized"}'
+    http_version: 
+  recorded_at: Wed, 17 Apr 2019 07:46:30 GMT
+- request:
+    method: get
+    uri: https://dog-days-api.herokuapp.com/api/v1/users?email=justin@gmail.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 17 Apr 2019 07:48:00 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"286feb22be766af44446de4c1322bf42"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4e61d438-660a-497f-a3d6-3be6e06732f5
+      X-Runtime:
+      - '0.009160'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"id":1,"name":"Justin","email":"justin@gmail.com","password_digest":"$2a$10$5C7iSe7eNRK/yzUR1WWxjOxHfCN55MvhtIMGIGSVYTcMWgGa5ZNFm","created_at":"2019-04-17T05:44:56.097Z","updated_at":"2019-04-17T05:44:56.097Z"}'
+    http_version: 
+  recorded_at: Wed, 17 Apr 2019 07:46:58 GMT
+recorded_with: VCR 4.0.0
