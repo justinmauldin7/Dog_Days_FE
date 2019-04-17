@@ -9,4 +9,9 @@ class FavoritesController < ApplicationController
       redirect_to favorites_path
     end
   end
+
+  def destroy
+    @dog = DogService.delete_dog(params[:id])
+    redirect_to favorites_path
+  end
 end
