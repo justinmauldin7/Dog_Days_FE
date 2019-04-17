@@ -1,5 +1,8 @@
 class WelcomeController < ApplicationController
   def index
-    @dogs = DogFacade.get_all_dogs
+    if params[:search]
+      @breed = params[:search]
+      @dog_images = SearchService.dog_search(@breed)
+    end
   end
 end

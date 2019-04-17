@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <% @dogs.each do |dog| %>
+      <div class="dog">
+        <img id="dog_image" src="<%= dog[:image] %>" alt="<%= dog[:breed] %>">
+        <h4><%= dog[:breed] %></h4>
+        <%= link_to "Delete", favorite_path(id: dog[:id]), method: :delete, class: 'delete_button' %>
+      </div>
+    <% end %>
+  </body>
+</html>
