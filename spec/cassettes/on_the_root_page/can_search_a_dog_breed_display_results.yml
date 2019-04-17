@@ -2,49 +2,6 @@
 http_interactions:
 - request:
     method: get
-    uri: https://dog-days-api.herokuapp.com/api/v1/dogs.json
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.15.4
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - Cowboy
-      Date:
-      - Tue, 16 Apr 2019 23:22:17 GMT
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - W/"120372c0d6fd0bf767fd633b99d77934"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 3faa1de1-9e6f-4e4e-8951-cfa67202b146
-      X-Runtime:
-      - '0.006870'
-      Transfer-Encoding:
-      - chunked
-      Via:
-      - 1.1 vegur
-    body:
-      encoding: UTF-8
-      string: '[{"id":1,"breed":"Labrador","image":"https://images.dog.ceo/breeds/labrador/n02099712_6901.jpg","created_at":"2019-04-16T19:34:15.477Z","updated_at":"2019-04-16T19:34:15.477Z"},{"id":2,"breed":"Labrador","image":"https://images.dog.ceo/breeds/labrador/n02099712_8051.jpg","created_at":"2019-04-16T19:34:15.484Z","updated_at":"2019-04-16T19:34:15.484Z"},{"id":3,"breed":"Labrador","image":"https://images.dog.ceo/breeds/labrador/n02099712_7411.jpg","created_at":"2019-04-16T19:34:15.492Z","updated_at":"2019-04-16T19:34:15.492Z"},{"id":4,"breed":"Beagle","image":"https://images.dog.ceo/breeds/beagle/n02088364_12124.jpg","created_at":"2019-04-16T19:34:15.499Z","updated_at":"2019-04-16T19:34:15.499Z"},{"id":5,"breed":"Pug","image":"https://images.dog.ceo/breeds/pug/n02110958_13439.jpg","created_at":"2019-04-16T19:34:15.505Z","updated_at":"2019-04-16T19:34:15.505Z"},{"id":6,"breed":"Pug","image":"https://images.dog.ceo/breeds/pug/n02110958_14594.jpg","created_at":"2019-04-16T19:34:15.511Z","updated_at":"2019-04-16T19:34:15.511Z"}]'
-    http_version: 
-  recorded_at: Tue, 16 Apr 2019 23:21:16 GMT
-- request:
-    method: get
     uri: https://dog.ceo/api/breed/Labrador/images/random/6.json
     body:
       encoding: US-ASCII
@@ -62,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 16 Apr 2019 23:22:26 GMT
+      - Wed, 17 Apr 2019 00:51:29 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -70,8 +27,8 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=df17a354a84b8564a754b830858304d6a1555456946; expires=Wed, 15-Apr-20
-        23:22:26 GMT; path=/; domain=.dog.ceo; HttpOnly; Secure
+      - __cfduid=df34f31f3908f2eed03e9eac90bc8530d1555462289; expires=Thu, 16-Apr-20
+        00:51:29 GMT; path=/; domain=.dog.ceo; HttpOnly; Secure
       X-Powered-By:
       - PHP/7.1.23
       Cache-Control:
@@ -93,10 +50,10 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 4c89e6bba8364fff-DEN
+      - 4c8a692c1cb5c7df-DEN
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"success","message":["https:\/\/images.dog.ceo\/breeds\/labrador\/n02099712_3776.jpg","https:\/\/images.dog.ceo\/breeds\/labrador\/n02099712_4177.jpg","https:\/\/images.dog.ceo\/breeds\/labrador\/n02099712_475.jpg","https:\/\/images.dog.ceo\/breeds\/labrador\/n02099712_5263.jpg","https:\/\/images.dog.ceo\/breeds\/labrador\/n02099712_7815.jpg","https:\/\/images.dog.ceo\/breeds\/labrador\/n02099712_8242.jpg"]}'
+      string: '{"status":"success","message":["https:\/\/images.dog.ceo\/breeds\/labrador\/n02099712_1229.jpg","https:\/\/images.dog.ceo\/breeds\/labrador\/n02099712_1987.jpg","https:\/\/images.dog.ceo\/breeds\/labrador\/n02099712_221.jpg","https:\/\/images.dog.ceo\/breeds\/labrador\/n02099712_2501.jpg","https:\/\/images.dog.ceo\/breeds\/labrador\/n02099712_4133.jpg","https:\/\/images.dog.ceo\/breeds\/labrador\/n02099712_4759.jpg"]}'
     http_version: 
-  recorded_at: Tue, 16 Apr 2019 23:21:24 GMT
+  recorded_at: Wed, 17 Apr 2019 00:50:26 GMT
 recorded_with: VCR 4.0.0
