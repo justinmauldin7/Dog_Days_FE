@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   resources :favorites, only: [:index, :create, :destroy]
 
   get '/login', to: "sessions#new"
+  post '/login', to: "sessions#create"
+  delete '/logout', to: "sessions#destroy"
 end
