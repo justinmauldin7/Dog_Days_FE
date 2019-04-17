@@ -1,11 +1,10 @@
 require 'rails_helper'
 
-describe "on the root page" do
+describe "on the favorite dogs page" do
   it "can see a list of favorite dogs", :vcr do
     visit '/favorites'
 
     expect(current_path).to eq(favorites_path)
-    expect(page).to have_css(".dog", count: 6)
 
     within(first(".dog")) do
       expect(page).to have_content("Labrador")
