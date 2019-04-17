@@ -17,7 +17,7 @@
         <div class="search_results">
           <img id="dog_image" src="<%= image %>" alt="<%= @breed %>">
           <h4><%= @breed %></h4>
-          <%= link_to "Favorite", root_path(@breed, image), method: :create , class: 'favorite_button' %>
+          <%= link_to "Favorite", favorites_path(breed: @breed, image: image), method: :post, class: 'favorite_button' %>
         </div>
       <% end %>
     <% end %>
