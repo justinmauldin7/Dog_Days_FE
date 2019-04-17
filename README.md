@@ -3,14 +3,23 @@
 [![Build Status](https://travis-ci.com/justinmauldin7/Dog_Days_FE.svg?branch=master)](https://travis-ci.com/justinmauldin7/Dog_Days_FE)
 
 
-Dog Days is a Mod4 take home challenge project at [Turing School of Software & Design](https://turing.io/) where one student with 6 months experience in software development has 3 days to create an app using the dogs.ceo API.
+Dog Days is a Mod4 take home challenge project at [Turing School of Software & Design](https://turing.io/) where one student with 6 months experience in software development has 3 days to create an app using the [Dog API](https://dog.ceo/dog-api/).
 
-![Current Version](.jpg)
+You can enter a dog breed and get search results back from the dogs.ceo API.  Then you can favorite any result, and navigate to your favorites page to see your favorites and delete them if you would like.
+
+![Dashboard](https://imgur.com/h9Wtgum.jpg)
+Root page
+
+![Search](https://imgur.com/uRnze0o.jpg)
+Dog Search with Results
+
+![Favorites](https://imgur.com/fw9NMd1.jpg)
+Favorites page
 
 
 
 #### Dog Days Production Links:
-Live App:
+Live App: https://dog-days.herokuapp.com/
 
 Backend API: https://dog-days-api.herokuapp.com/api/v1/dogs
 
@@ -84,6 +93,7 @@ To deploy this app through Heroku as we have, you can follow these [instructions
 * [Ruby - Version 2.4.5](https://ruby-doc.org/core-2.4.5/) - Base code language
 * [Rails - Version 5.2.2](https://guides.rubyonrails.org/v5.2/) - Web framework used
 * [Faraday](https://github.com/lostisland/faraday) - HTTP Client for API calls
+* [Dog API](https://dog.ceo/dog-api/) - API used to get dog images
 * [RSpec](http://rspec.info/documentation/) - Testing Suite
 * [TravisCI](https://travis-ci.org/) - Used for continuous integration on frontend & backend
 * [Heroku](https://www.heroku.com/) - Used to deploy to production for frontend & backend
@@ -100,7 +110,7 @@ I will review the request and merge it into master if it is approved.
 
 ## Author
 
-* **Justin Mauldin** - *Team member* - [Justin's Github](https://github.com/justinmauldin7)
+* **Justin Mauldin** - [Justin's Github](https://github.com/justinmauldin7)
 
 
 ## Acknowledgments
