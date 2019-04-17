@@ -8,4 +8,9 @@ class DogService
     response = Faraday.post "https://dog-days-api.herokuapp.com/api/v1/dogs?breed=#{breed}&image=#{image}"
     JSON.parse(response.body, symbolize_names: true)
   end
+
+  def self.delete_dog(id)
+    response = Faraday.delete "https://dog-days-api.herokuapp.com/api/v1/dogs/#{id}"
+    JSON.parse(response.body, symbolize_names: true)
+  end
 end
