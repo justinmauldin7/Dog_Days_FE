@@ -9,6 +9,7 @@
       <div class="dog">
         <img id="dog_image" src="<%= dog[:image] %>" alt="<%= dog[:breed] %>">
         <h4><%= dog[:breed] %></h4>
+        <%= link_to "Delete", favorite_path(id: dog[:id]), method: :delete, class: 'delete_button' %>
       </div>
     <% end %>
   </body>
