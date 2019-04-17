@@ -5,6 +5,10 @@
     <title></title>
   </head>
   <body>
+    <h1>Dog Days</h1>
+    <div class="home_button">
+      <p><%= link_to "home", root_path %></p>
+    </div>
     <% @dogs.each do |dog| %>
       <div class="dog">
         <img id="dog_image" src="<%= dog[:image] %>" alt="<%= dog[:breed] %>">
